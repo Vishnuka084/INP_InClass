@@ -1,54 +1,54 @@
 package lk.ijse;
 
-class ABC{
-    void temp(){
-        System.out.println("hello ...");
+class Countable{
+    public void count(int number){
+        for (int i = 1; i < 10 ; i++) {
+            System.out.println(i + number);
+        }
     }
 }
 
 // MyTask IS-A Thread
-class MyTask extends ABC implements Runnable{
-    @Override
-    public void  run(){ //running step
-        for (int i = 1; i < 10; i++){
-            System.out.println("Execute " + i + " Task02 ");
-        }
+class MyTask1 implements Runnable{
+    Countable cb;
+
+    MyTask1(Countable cb){
+        this.cb = cb;
     }
 
-//    void executeTask(){
-//        for (int i = 1; i < 10; i++){
-//            System.out.println("Execute " + i + " Task02 ");
-//        }
-//    }
+    @Override
+    public void  run(){ //running step
+        cb.count(10);
+    }
+}
+
+class MyTask2 implements Runnable{
+    Countable cb;
+
+    MyTask2(Countable cb){
+        this.cb = cb;
+    }
+
+    @Override
+    public void  run(){ //running step
+        cb.count(100);
+    }
 }
 
 public class App {
     public static void main(String[] args) {
-        //task 01
-        System.out.println("-----Application started-----");
 
+        Countable cb = new Countable();
 
         //task 02
-        Runnable mt = new MyTask();
-        Thread tr = new Thread(mt); //--new
-        tr.setDaemon(true);
-        tr.start();  //---> runnable
+        Runnable mt1 = new MyTask1(cb);
+        Thread tr1 = new Thread(mt1); //--new state
+        tr1.start();  //---> runnable state
 
+        Runnable mt2 = new MyTask1(cb);
+        Thread tr2 = new Thread(mt2); //--new state
+        tr2.start();  //---> runnable state
 
-        System.out.println(tr.isDaemon());//demon thread
-
-       /*
-        < short cut >
-        new Thread(new MyTask()).start(); // child thread / worker
-        */
-        //mt.executeTask();
-
-
-
-        //task 3   //by main thread
-        for (int i = 1 ;i < 10; i++){
-            System.out.println("Execute "  + i + "Task3");
-        }
 
         //task 4
         System.out.println("-----Application Ended---");
