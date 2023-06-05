@@ -31,7 +31,11 @@ public class App {
         //task 02
         Runnable mt = new MyTask();
         Thread tr = new Thread(mt);
+        tr.setDaemon(true);
         tr.start();
+
+
+        System.out.println(tr.isDaemon());//demon thread
 
        /*
         < short cut >
