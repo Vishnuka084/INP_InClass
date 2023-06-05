@@ -9,7 +9,7 @@ class ABC{
 // MyTask IS-A Thread
 class MyTask extends ABC implements Runnable{
     @Override
-    public void  run(){
+    public void  run(){ //running step
         for (int i = 1; i < 10; i++){
             System.out.println("Execute " + i + " Task02 ");
         }
@@ -30,9 +30,9 @@ public class App {
 
         //task 02
         Runnable mt = new MyTask();
-        Thread tr = new Thread(mt);
+        Thread tr = new Thread(mt); //--new
         tr.setDaemon(true);
-        tr.start();
+        tr.start();  //---> runnable
 
 
         System.out.println(tr.isDaemon());//demon thread
