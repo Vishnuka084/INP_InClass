@@ -35,7 +35,7 @@ public class App {
 
        /*
         < short cut >
-        new Thread(new MyTask()).start();
+        new Thread(new MyTask()).start(); // child thread / worker
         */
         //mt.executeTask();
 
