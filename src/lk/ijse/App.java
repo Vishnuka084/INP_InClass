@@ -4,6 +4,7 @@ class Countable{
     public void count(int number){
         for (int i = 1; i < 10 ; i++) {
             System.out.println(i + number);
+
         }
     }
 }
@@ -21,7 +22,7 @@ class MyTask1 implements Runnable{
         cb.count(10);
     }
 }
-
+/// task 02
 class MyTask2 implements Runnable{
     Countable cb;
 
@@ -45,7 +46,7 @@ public class App {
         Thread tr1 = new Thread(mt1); //--new state
         tr1.start();  //---> runnable state
 
-        Runnable mt2 = new MyTask1(cb);
+        Runnable mt2 = new MyTask2(cb);
         Thread tr2 = new Thread(mt2); //--new state
         tr2.start();  //---> runnable state
 
