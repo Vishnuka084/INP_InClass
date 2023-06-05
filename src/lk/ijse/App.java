@@ -1,7 +1,13 @@
 package lk.ijse;
 
+class ABC{
+    void temp(){
+        System.out.println("hello ...");
+    }
+}
+
 // MyTask IS-A Thread
-class MyTask extends Thread{
+class MyTask extends ABC implements Runnable{
     @Override
     public void  run(){
         for (int i = 1; i < 10; i++){
@@ -23,8 +29,14 @@ public class App {
 
 
         //task 02
-        MyTask mt = new MyTask();
-        mt.start();
+        Runnable mt = new MyTask();
+        Thread tr = new Thread(mt);
+        tr.start();
+
+       /*
+        < short cut >
+        new Thread(new MyTask()).start();
+        */
         //mt.executeTask();
 
 
