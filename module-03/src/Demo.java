@@ -1,3 +1,5 @@
+import java.io.File;
+
 public class Demo {
     public static void main(String[] args) {
 
@@ -100,7 +102,7 @@ public class Demo {
             *
             * */
 
-        //---boxing --
+       /* //---boxing --
         int x = 100;
         Integer iOb;
         iOb=x; // illegal 1.4 < // legale auto Boxing (1.5)
@@ -109,7 +111,14 @@ public class Demo {
         //=========================
         Integer iOb2 = new Integer(100);
         int y = iOb2; //autoUnBoxing
-        y = iOb2.intValue(); //unBoxing
+        y = iOb2.intValue(); //unBoxing*/
+
+        File f1 = new File("src/Customer.txt");
+        System.out.println("f1 is exists :" +f1.exists());
+        System.out.println("f1 is exists :" +f1.isFile());
+        System.out.println("f1 is exists :" +f1.isDirectory());
+        System.out.println("f1 is exists :" +f1.canRead());
+        System.out.println("f1 is exists :" +f1.canWrite());
 
     }
 }
