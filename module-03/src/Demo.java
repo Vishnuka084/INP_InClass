@@ -74,13 +74,18 @@ public class Demo {
                 System.out.println("Size :"+x.length);
                 */
 
-        String name = "abc";
-        System.out.println(name.length());//4
-        name.trim();// spaces rid
-        System.out.println( name.length());//4
-        System.out.println( name.trim().length());//3
-        name = name.trim();
-        System.out.println(name.length());//3
+        /*
 
+                String name = "abc";
+                System.out.println(name.length());//4
+                name.trim();// spaces rid
+                System.out.println( name.length());//4
+                System.out.println( name.trim().length());//3
+                name = name.trim();
+                System.out.println(name.length());//3
+        */
+
+        String s1 = "animals";
+        System.out.println(s1.toUpperCase());
     }
 }
