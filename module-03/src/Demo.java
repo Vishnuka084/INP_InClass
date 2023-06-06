@@ -51,11 +51,19 @@ public class Demo {
         System.out.println("Name :"+name);
         System.out.println("City :"+city);*/
 
+        /*
         //replace
         String s1 = "abc#xyz";
         System.out.println(s1);
         s1 = s1.replace("#" , "@");
-        System.out.println(s1);
+        System.out.println(s1);*/
+
+        //substring
+        String s1 = "abc@123.com";
+        String ext = s1.substring(8);
+        System.out.println(ext);
+        String mid = s1.substring(4,7);
+        System.out.println(mid);
 
     }
 }
