@@ -1,10 +1,15 @@
 package lk.ijse;
 
 class Countable{
-    public void count(int number){
+    public synchronized void count(int number){
         for (int i = 1; i < 10 ; i++) {
             System.out.println(i + number);
 
+            try {
+                Thread.sleep(500);
+            }catch (InterruptedException e){
+                e.printStackTrace();
+            }
         }
     }
 }
