@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Inp_inclass.iml" filepath="$PROJECT_DIR$/Inp_inclass.iml" />
       <module fileurl="file://$PROJECT_DIR$/Thread/Thread.iml" filepath="$PROJECT_DIR$/Thread/Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-02/module-02.iml" filepath="$PROJECT_DIR$/module-02/module-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_01/module_01.iml" filepath="$PROJECT_DIR$/module_01/module_01.iml" />
     </modules>
   </component>
