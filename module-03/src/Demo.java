@@ -14,7 +14,7 @@ public class Demo {
         System.out.println(s1==s2);//false
         System.out.println(s3==s4);//true*/
 
-
+/*
         // == , equals() , equalsIgnoreCase()
         String s1 = "Danapala";
         String s2 = "Danapala";
@@ -28,6 +28,16 @@ public class Demo {
 
         if (s3.equalsIgnoreCase(s4)){
             System.out.println("s3==s4");
-        }
+        }*/
+
+        String s1 = "abc";
+        String s2 = "abc";
+        String s3 = new String("abc");
+        String s4 = new String("abc");
+        System.out.println("s1==s2:"+(s1==s2));//true
+        System.out.println("s3==s4:"+(s3==s4));//false
+        System.out.println("s1==s3:"+(s1==s3));//false
+        System.out.println("abc"=="abc");//true
+        System.out.println(new String("abc")== new String("abc"));//false
     }
 }
