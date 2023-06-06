@@ -28,15 +28,20 @@ public class Demo {
 
 */
 
-        FileReader fr = new FileReader("src/Customers.txt");
+        /*FileReader fr = new FileReader("src/Customers.txt");
         BufferedReader br = new BufferedReader(fr);
         String line = br .readLine();
         while (line!=null){
             System.out.println(line);
             line = br .readLine();
-        }
+        }*/
 
 
 
+       InputStreamReader inputStreamReader = new InputStreamReader(System.in);
+       BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        System.out.println("Input Your Name :");
+        String name = bufferedReader.readLine();
+        System.out.println("Name :" +name);
     }
 }
