@@ -54,7 +54,7 @@ public class Demo {
         //replace
         String s1 = "abc#xyz";
         System.out.println(s1);
-        s1.replace("#" , "@");
+        s1 = s1.replace("#" , "@");
         System.out.println(s1);
 
     }
