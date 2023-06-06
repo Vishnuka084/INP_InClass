@@ -1,4 +1,5 @@
 package lk.ijse;
+//thread-------->
 
 class Countable{
     //one time one access one thread
