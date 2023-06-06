@@ -115,10 +115,10 @@ public class Demo {
 
         File f1 = new File("src/Customer.txt");
         System.out.println("f1 is exists :" +f1.exists());
-        System.out.println("f1 is exists :" +f1.isFile());
-        System.out.println("f1 is exists :" +f1.isDirectory());
-        System.out.println("f1 is exists :" +f1.canRead());
-        System.out.println("f1 is exists :" +f1.canWrite());
+        System.out.println("f1 is File :" +f1.isFile());
+        System.out.println("f1 is directory :" +f1.isDirectory());
+        System.out.println("f1 is Read :" +f1.canRead());
+        System.out.println("f1 is write :" +f1.canWrite());
 
     }
 }
