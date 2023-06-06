@@ -134,11 +134,15 @@ public class Demo {
 
 */
 
-        File f1 = new File("src/photos");
+       /* File f1 = new File("src/photos");
         System.out.println("f1 is exists :"+f1.exists());
         boolean isDeleted = f1.delete();
         System.out.println(isDeleted);
         System.out.println("f1 is exists  :"+f1.exists());
+*/
 
+
+        File f1 = new File("src/photos");
+        f1.renameTo(new File("src/Images"));
     }
 }
