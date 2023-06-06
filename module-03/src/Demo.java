@@ -58,12 +58,19 @@ public class Demo {
         s1 = s1.replace("#" , "@");
         System.out.println(s1);*/
 
-        //substring
+        /* //substring
         String s1 = "abc@123.com";
         String ext = s1.substring(8);
         System.out.println(ext);
         String mid = s1.substring(4,7);
         System.out.println(mid);
+*/
 
+
+        //substring2
+        String s1 = new String("abc");
+        System.out.println("Size :"+s1.length());
+        int[]x={1,2,3,4};
+        System.out.println("Size :"+x.length);
     }
 }
