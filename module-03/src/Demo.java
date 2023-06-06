@@ -106,7 +106,10 @@ public class Demo {
         iOb=x; // illegal 1.4 < // legale auto Boxing (1.5)
         iOb = Integer.valueOf(x); //boxing ---> primitive int --> Integer Object
 
-
+        //=========================
+        Integer iOb2 = new Integer(100);
+        int y = iOb2; //autoUnBoxing
+        y = iOb2.intValue(); //unBoxing
 
     }
 }
