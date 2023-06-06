@@ -1,5 +1,4 @@
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 
 public class Demo {
     public static void main(String[] args) throws IOException {
@@ -15,6 +14,7 @@ public class Demo {
         int x = input.nextInt();
         System.out.println(x);*/
 
+        /*
 
         FileInputStream fis = new FileInputStream("src/Customers.txt");
         int code = fis.read();
@@ -26,6 +26,15 @@ public class Demo {
         code = fis.read();
         System.out.println("Code "+(char)code);
 
+*/
+
+        FileReader fr = new FileReader("src/Customers.txt");
+        BufferedReader br = new BufferedReader(fr);
+        String line = br .readLine();
+        while (line!=null){
+            System.out.println(line);
+            line = br .readLine();
+        }
 
 
 
