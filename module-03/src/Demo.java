@@ -40,16 +40,22 @@ public class Demo {
         System.out.println("abc"=="abc");//true
         System.out.println(new String("abc")== new String("abc"));//false*/
 
-
+        /*
         String city = "karannagoda";
         //
         String name = "Karannagoda";
         System.out.println("Name :"+name);
         System.out.println("City :"+city);
 
-        name.concat("Maya");
+        name = name.concat("Maya");
         System.out.println("Name :"+name);
-        System.out.println("City :"+city);
+        System.out.println("City :"+city);*/
+
+        //replace
+        String s1 = "abc#xyz";
+        System.out.println(s1);
+        s1.replace("#" , "@");
+        System.out.println(s1);
 
     }
 }
