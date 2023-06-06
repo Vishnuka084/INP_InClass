@@ -1,7 +1,8 @@
 import java.io.File;
+import java.io.IOException;
 
 public class Demo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         /*  String s1 = new String("abc");  //dynamic object creation
         String s2 = "abc";  //String literals object
@@ -102,7 +103,7 @@ public class Demo {
             *
             * */
 
-       /* //---boxing --
+        /* //---boxing --
         int x = 100;
         Integer iOb;
         iOb=x; // illegal 1.4 < // legale auto Boxing (1.5)
@@ -113,12 +114,22 @@ public class Demo {
         int y = iOb2; //autoUnBoxing
         y = iOb2.intValue(); //unBoxing*/
 
-        File f1 = new File("src/Customer.txt");
+        /*
+
+                File f1 = new File("src/Customer.txt");
+                System.out.println("f1 is exists :" +f1.exists());
+                System.out.println("f1 is File :" +f1.isFile());
+                System.out.println("f1 is directory :" +f1.isDirectory());
+                System.out.println("f1 is Read :" +f1.canRead());
+                System.out.println("f1 is write :" +f1.canWrite());
+        */
+
+        File f1 = new File("Orders.txt");
+        System.out.println("f1 is exists :"+f1.exists());
+        boolean isCreated = f1.createNewFile(); //IOException
+        System.out.println(isCreated);
         System.out.println("f1 is exists :" +f1.exists());
-        System.out.println("f1 is File :" +f1.isFile());
-        System.out.println("f1 is directory :" +f1.isDirectory());
-        System.out.println("f1 is Read :" +f1.canRead());
-        System.out.println("f1 is write :" +f1.canWrite());
+
 
     }
 }
