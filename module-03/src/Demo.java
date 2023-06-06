@@ -66,11 +66,21 @@ public class Demo {
         System.out.println(mid);
 */
 
+        /*
+                //substring2
+                String s1 = new String("abc");
+                System.out.println("Size :"+s1.length());
+                int[]x={1,2,3,4};
+                System.out.println("Size :"+x.length);
+                */
 
-        //substring2
-        String s1 = new String("abc");
-        System.out.println("Size :"+s1.length());
-        int[]x={1,2,3,4};
-        System.out.println("Size :"+x.length);
+        String name = "abc";
+        System.out.println(name.length());//4
+        name.trim();// spaces rid
+        System.out.println( name.length());//4
+        System.out.println( name.trim().length());//3
+        name = name.trim();
+        System.out.println(name.length());//3
+
     }
 }
