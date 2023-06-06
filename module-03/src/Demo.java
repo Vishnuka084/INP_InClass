@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintStream;
 
 public class Demo {
     public static void main(String[] args) throws IOException {
@@ -142,7 +143,18 @@ public class Demo {
 */
 
 
+        /*
+        // rename-----
         File f1 = new File("src/photos");
         f1.renameTo(new File("src/Images"));
+
+        */
+
+        //Io stream '
+        System.out.println("Hello");
+        System.out.println(System.out);
+        PrintStream ps = System.out;
+        ps.println("Hello");
+
     }
 }
