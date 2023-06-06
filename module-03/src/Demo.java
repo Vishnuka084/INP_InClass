@@ -97,9 +97,14 @@ public class Demo {
             * float - Float
             * char - Character
             * boolean - Boolean
+            *
             * */
 
-
+        //---boxing --
+        int x = 100;
+        Integer iOb;
+        iOb=x; // illegal 1.4 < // legale auto Boxing (1.5)
+        iOb = Integer.valueOf(x); //boxing ---> primitive int --> Integer Object
 
 
 
