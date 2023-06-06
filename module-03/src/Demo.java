@@ -93,7 +93,7 @@ public class Demo {
 
 
         //wrapper class
-            /*
+        /*
             * byte - Byte
             * short - Short
             * int - Integer
@@ -124,12 +124,21 @@ public class Demo {
                 System.out.println("f1 is write :" +f1.canWrite());
         */
 
+
+        /*
         File f1 = new File("Orders.txt");
         System.out.println("f1 is exists :"+f1.exists());
         boolean isCreated = f1.createNewFile(); //IOException
         System.out.println(isCreated);
         System.out.println("f1 is exists :" +f1.exists());
 
+*/
+
+        File f1 = new File("src/photos");
+        System.out.println("f1 is exists :"+f1.exists());
+        boolean isDeleted = f1.delete();
+        System.out.println(isDeleted);
+        System.out.println("f1 is exists  :"+f1.exists());
 
     }
 }
