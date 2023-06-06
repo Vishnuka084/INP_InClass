@@ -37,11 +37,15 @@ public class Demo {
         }*/
 
 
-
-       InputStreamReader inputStreamReader = new InputStreamReader(System.in);
+       /*InputStreamReader inputStreamReader = new InputStreamReader(System.in);
        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
         System.out.println("Input Your Name :");
         String name = bufferedReader.readLine();
-        System.out.println("Name :" +name);
+        System.out.println("Name :" +name);*/
+
+
+        FileOutputStream fileOutputStream = new FileOutputStream("src/Customers.txt");
+        fileOutputStream.write('A');
+        fileOutputStream.write('B');
     }
 }
