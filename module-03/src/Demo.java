@@ -85,7 +85,23 @@ public class Demo {
                 System.out.println(name.length());//3
         */
 
-        String s1 = "animals";
-        System.out.println(s1.toUpperCase());
+        /*String s1 = "animals";
+        System.out.println(s1.toUpperCase());*/
+
+
+        //wrapper class
+            /*
+            * byte - Byte
+            * short - Short
+            * int - Integer
+            * float - Float
+            * char - Character
+            * boolean - Boolean
+            * */
+
+
+
+
+
     }
 }
